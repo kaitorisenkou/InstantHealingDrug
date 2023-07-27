@@ -65,7 +65,7 @@ namespace InstantHealingDrug {
 
             IEnumerable<Verb> equipmentVerbs = pawn.equipment.AllEquipmentVerbs.Concat(pawn.apparel.AllApparelVerbs);
 
-            Log.Message(string.Join(",", equipmentVerbs.Select(t => t.GetType().ToString())));
+            //Log.Message(string.Join(",", equipmentVerbs.Select(t => t.GetType().ToString())));
 
             var selfHediffVerb = equipmentVerbs.FirstOrDefault(
                 t => 
