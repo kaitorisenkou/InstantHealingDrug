@@ -56,6 +56,8 @@ namespace InstantHealingDrug {
             if (__result != null ||
                 InstantHealingDrug.VerbSelfHediffType == null ||
                 pawn == null ||
+                pawn.equipment == null ||
+                pawn.apparel == null ||
                 pawn.VerbTracker == null ||
                 pawn.VerbTracker.AllVerbs == null)
                 return;
